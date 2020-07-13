@@ -23,14 +23,14 @@ namespace ThetaRamdan2020.Models
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Vendor> Vendor { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=den1.mssql7.gear.host;Database=thetaramdan2020;User ID=thetaramdan2020; Password=Ba19!332?UeX;Trusted_Connection=False;");
-            }
-        }
+//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//        {
+//            if (!optionsBuilder.IsConfigured)
+//            {
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+//                optionsBuilder.UseSqlServer("Server=den1.mssql7.gear.host;Database=thetaramdan2020;User ID=thetaramdan2020; Password=Ba19!332?UeX;Trusted_Connection=False;");
+//            }
+//        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
